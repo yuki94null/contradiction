@@ -5,7 +5,6 @@
     ## 成形
         $data modify storage .:log Error append value {ErrorID:"$(ErrorID)",ErrorInfo:"$(ErrorInfo)"}
 
-        
         ### それぞれデータを足していく
             function system:function/get_entity_type/input
             data modify storage .:log Error[-1].EntityData.EntityType set from storage .:function EntityType
@@ -18,7 +17,8 @@
             data modify storage .:log Tmp set from storage .:log Error[-1]
             data modify storage .:log Tmp.EntityType set from storage .:log Error[-1].EntityData.EntityType
             execute store result storage .:log Tmp.Num int 1.0 run data get storage .:log Error
-            function system:log/error/send_error_message with storage .:log Tmp
+            data modify storage .:log Tmp.Text set value "エラーを検出しました"
+            function system:log/mcr_console_message with storage .:log Tmp
 
         ### プレイヤー以外
             execute if entity @s[type=!player] run return fail
@@ -27,6 +27,3 @@
             data modify storage .:log Error[-1].EntityData.PlayerName set from storage .:function PlayerName
             data modify storage .:log Error[-1].EntityData.Inventory set from entity @s Inventory
             data modify storage .:log Error[-1].EntityData.equipment set from entity @s equipment
-
-
-    

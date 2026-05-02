@@ -1,1 +1,3 @@
-data remove storage .:log Error
+# log/resetall
+    ## remove
+        data remove storage .:log Error
