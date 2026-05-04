@@ -34,11 +34,11 @@ interactionで覆ってレイキャストで判定
 
 銃 : 剣 (射程比率)
 
-- Pistle : Spear (0:2) 槍が主体なもののピストルでけん制もできる
-- SG : Axe (0.5:0.5) // 火力が高いため射程でトレードオフ
-- SMG : Sword (1.00:1.00) // 標準
-- AR : Scythe (1.25:0.75) // scytheは射程が短い代わりに攻撃有効範囲が広い
-- SR : Knife (2:0) // SRで削ってナイフで決めに行く
+- "Knight" Pistle : Spear (0:2) 槍が主体なもののピストルでけん制もできる
+- "Breaker" SG : Axe (0.5:0.5) // 火力が高いため射程でトレードオフ
+- "Duelist" SMG : Sword (1.00:1.00) // 標準
+- "Suppressor" AR : Scythe (1.25:0.75) // scytheは射程が短い代わりに攻撃有効範囲が広い
+- "Assassin" SR : Knife (2:0) // SRで削ってナイフで決めに行く
 
 ### 懸念点
 

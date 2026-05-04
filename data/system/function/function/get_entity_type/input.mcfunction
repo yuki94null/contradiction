@@ -13,11 +13,11 @@
 
         ### if riding
             execute store success score #Tmp global on vehicle if entity @s run \
-                function system:function/get_entity_type/get {State:"#Ride"}
+                function system:function/get_entity_type/get {isRiding:true}
         
         ### other
             execute unless score #Tmp global matches 1.. summon text_display run \
-                function system:function/get_entity_type/get {State:"@s"}
+                function system:function/get_entity_type/get {isRiding:false}
 
     ## tidying
         tag @s remove GetEntityData
