@@ -20,6 +20,7 @@
         
         ### スポーン位置設定
             execute as @e[tag=Player] at @s run spawnpoint @s ~ ~ ~ ~ ~
+            execute as @e[tag=Player] at @s run attribute @s knockback_resistance base set 1.0
     ## set
         data modify storage .:game Game.State set value true
         data modify storage .:game Game.LimitTime set value 60

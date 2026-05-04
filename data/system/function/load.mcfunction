@@ -69,11 +69,11 @@
             }
         
         data remove storage .:system Weapon
-        data modify storage .:system Weapon append value {Loadout:Knight,Melee:"Spear",Gun:"Pistle",x_plus:0.5d,z_plus:7.5d,x_minus:0.5d,MeleeDamage:1.0,AttackCT:8}
-        data modify storage .:system Weapon append value {Loadout:Breaker,Melee:"Axe",Gun:"SG",x_plus:0.5d,z_plus:3.5d,x_minus:0.5d,MeleeDamage:1.0,AttackCT:10}
-        data modify storage .:system Weapon append value {Loadout:Duelist,Melee:"Sword",Gun:"SMG",x_plus:0.5d,z_plus:4.0d,x_minus:0.5d,MeleeDamage:1.0,AttackCT:6}
-        data modify storage .:system Weapon append value {Loadout:Suppressor,Melee:"Scythe",Gun:"AR",x_plus:2.0d,z_plus:3.0d,x_minus:2.0d,MeleeDamage:1.0,AttackCT:4}
-        data modify storage .:system Weapon append value {Loadout:Assassin,Melee:"Knife",Gun:"SR",x_plus:0.5d,z_plus:3.0d,x_minus:0.5d,MeleeDamage:1.0,AttackCT:2}
+        data modify storage .:system Weapon append value {Loadout:Knight,Melee:"Spear",Gun:"Pistle",MeleeDamage:1.0,AttackCT:8,km_bounding:{x_plus:0.5d,z_plus:7.5d,x_minus:0.5d}}
+        data modify storage .:system Weapon append value {Loadout:Breaker,Melee:"Axe",Gun:"SG",MeleeDamage:1.0,AttackCT:10,km_bounding:{x_plus:0.5d,z_plus:3.5d,x_minus:0.5d}}
+        data modify storage .:system Weapon append value {Loadout:Duelist,Melee:"Sword",Gun:"SMG",MeleeDamage:1.0,AttackCT:6,km_bounding:{x_plus:0.5d,z_plus:4.0d,x_minus:0.5d}}
+        data modify storage .:system Weapon append value {Loadout:Suppressor,Melee:"Scythe",Gun:"AR",MeleeDamage:1.0,AttackCT:4,km_bounding:{x_plus:2.0d,z_plus:3.0d,x_minus:2.0d}}
+        data modify storage .:system Weapon append value {Loadout:Assassin,Melee:"Knife",Gun:"SR",MeleeDamage:1.0,AttackCT:2,km_bounding:{x_plus:0.5d,z_plus:3.0d,x_minus:0.5d}}
 
     ## stopwatch
         stopwatch create .:log

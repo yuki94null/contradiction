@@ -1,4 +1,6 @@
 # player/init
+    ## attribute
+        attribute @s knockback_resistance base set 1.0
     ## leave from team
         team leave @s
     ## score reset
