@@ -11,7 +11,8 @@
                             "function": "set_components",
                             "components": {
                                 "minecraft:custom_data":{
-                                    "melee": {
+                                    "weapon": {
+                                        "type": "melee",
                                         "kinds": "spear"
                                     }
                                 },
