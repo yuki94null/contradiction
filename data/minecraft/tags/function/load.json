@@ -1,6 +1,7 @@
 {
     "values": [
         {"id": "system:load","required": false},
-        {"id": "km_bounding:zz/common/reload", "required": false}
+        {"id": "km_bounding:zz/common/reload", "required": false},
+        {"id": "p_motion:system/load", "required": false}
     ]
 }

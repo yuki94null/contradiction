@@ -48,3 +48,4 @@ interactionで覆ってレイキャストで判定
 ## お借りしたLibrary
 
 柔軟なエンティティの範囲指定 `km-bounding` (`https://github.com/komaramune/km-bounding`)
+プレイヤーにモーションをかける `p_motion` (`https://github.com/Hirobao1/CustomEnchant_PlayerMotion`)

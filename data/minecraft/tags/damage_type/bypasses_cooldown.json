@@ -1,5 +1,6 @@
 {
     "values": [
-        {"id": "player_attack","required": false}
+        {"id": "player_attack","required": false},
+        {"id": "generic_kill","required": false}
     ]
 }
