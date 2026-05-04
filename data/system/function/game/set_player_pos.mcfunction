@@ -7,10 +7,10 @@
             data modify storage .:system tmp.cy set from storage .:map current_map.points[{type:"center"}].Pos.y
             data modify storage .:system tmp.cz set from storage .:map current_map.points[{type:"center"}].Pos.z
 
-            $data modify storage .:system tmp.x set from storage .:map current_map.points[{type:"spawn$(index)"}].Pos.x
-            $data modify storage .:system tmp.y set from storage .:map current_map.points[{type:"spawn$(index)"}].Pos.y
-            $data modify storage .:system tmp.z set from storage .:map current_map.points[{type:"spawn$(index)"}].Pos.z
-            $data modify storage .:system tmp.ry set from storage .:map current_map.points[{type:"spawn$(index)"}].Pos.ry
+            $data modify storage .:system tmp.x set from storage .:map current_map.points[{type:"spawn_$(index)"}].Pos.x
+            $data modify storage .:system tmp.y set from storage .:map current_map.points[{type:"spawn_$(index)"}].Pos.y
+            $data modify storage .:system tmp.z set from storage .:map current_map.points[{type:"spawn_$(index)"}].Pos.z
+            $data modify storage .:system tmp.ry set from storage .:map current_map.points[{type:"spawn_$(index)"}].Pos.ry
         ### mcr
             function system:game/mcr_set_player_pos with storage .:system tmp
     ## tidying

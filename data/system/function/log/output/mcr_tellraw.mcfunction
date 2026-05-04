@@ -2,6 +2,11 @@ $execute unless data storage .:log output{entity_type:"minecraft:player"} run \
 tellraw @s [\
 {text:"[",color:gold},{color:white,text:"$(index)"},{text:"] ",color:gold},{text:"\n"},\
 \
+{text:"[",color:gold},{color:white,text:"$(error_id)"},{text:"] ",color:gold},\
+\
+{text:'"',color:white},{color:green,text:"$(error_info)"},{text:'"',color:white},{text:"\n"},\
+{text:"\n"},\
+\
 {text:"    [",color:gold},{color:white,text:"Executed entity"},{text:"] ",color:gold},{text:"\n"},\
 \
 {text:"        [",color:gold},{color:white,text:"entity_type"},{text:"] ",color:gold},\
@@ -25,6 +30,10 @@ tellraw @s [\
 $execute if data storage .:log output{entity_type:"minecraft:player"} run \
 tellraw @s [\
 {text:"[",color:gold},{color:white,text:"$(index)"},{text:"] ",color:gold},{text:"\n"},\
+\
+{text:"[",color:gold},{color:white,text:"$(error_id)"},{text:"] ",color:gold},\
+\
+{text:'"',color:white},{color:green,text:"$(error_info)"},{text:'"',color:white},{text:"\n"},\
 \
 {text:"    [",color:gold},{color:white,text:"Executed entity"},{text:"] ",color:gold},{text:"\n"},\
 \

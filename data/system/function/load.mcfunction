@@ -27,8 +27,8 @@
             scoreboard objectives add log dummy
             scoreboard objectives add leave custom:leave_game
             scoreboard objectives add kill playerKillCount
-            scoreboard objectives add killasmelee dummy
-            scoreboard objectives add killasgun dummy
+            scoreboard objectives add kill_with_melee dummy
+            scoreboard objectives add kill_with_gun dummy
             scoreboard objectives add attack_ct dummy
         ### set
 
@@ -36,35 +36,35 @@
     ## storage
         data merge storage .:system {}
         data modify storage .:system bool.true set value true
-        data modify storage .:system bool.true set value true
+        data modify storage .:system bool.True set value true
         data modify storage .:system bool.1b set value true
         data modify storage .:system bool.1 set value true
         data remove storage .:map maps
         data modify storage .:map maps append value \
-            {map:0,name:"test0",points:[\
+            {map:0,name:"test_0",points:[\
                 {type:"center",Pos:{x:-144.00, y:-59.00, z:-32.0}},\
-                {type:"spawn0",Pos:{x:0d,y:0d,z:45.0d,ry:180d}},\
-                {type:"spawn1",Pos:{x:0d,y:0d,z:-45.0d,ry:0d}},\
-                {type:"spawn2",Pos:{x:29.0d,y:0d,z:0d,ry:90d}},\
-                {type:"spawn3",Pos:{x:-29.0d,y:0d,z:0d,ry:-90d}}\
+                {type:"spawn_0",Pos:{x:0d,y:0d,z:45.0d,ry:180d}},\
+                {type:"spawn_1",Pos:{x:0d,y:0d,z:-45.0d,ry:0d}},\
+                {type:"spawn_2",Pos:{x:29.0d,y:0d,z:0d,ry:90d}},\
+                {type:"spawn_3",Pos:{x:-29.0d,y:0d,z:0d,ry:-90d}}\
                 ]\
             }
         data modify storage .:map maps append value \
-            {map:1,name:"test1",points:[\
+            {map:1,name:"test_1",points:[\
                 {type:"center",Pos:{x:-144.00, y:-59.00, z:-32.0}},\
-                {type:"spawn0",Pos:{x:0d,y:0d,z:45.0d,ry:180d}},\
-                {type:"spawn1",Pos:{x:0d,y:0d,z:-45.0d,ry:0d}},\
-                {type:"spawn2",Pos:{x:29.0d,y:0d,z:0d,ry:90d}},\
-                {type:"spawn3",Pos:{x:-29.0d,y:0d,z:0d,ry:-90d}}\
+                {type:"spawn_0",Pos:{x:0d,y:0d,z:45.0d,ry:180d}},\
+                {type:"spawn_1",Pos:{x:0d,y:0d,z:-45.0d,ry:0d}},\
+                {type:"spawn_2",Pos:{x:29.0d,y:0d,z:0d,ry:90d}},\
+                {type:"spawn_3",Pos:{x:-29.0d,y:0d,z:0d,ry:-90d}}\
                 ]\
             }
         data modify storage .:map maps append value \
-            {map:2,name:"test2",points:[\
+            {map:2,name:"test_2",points:[\
                 {type:"center",Pos:{x:-144.00, y:-59.00, z:-32.0}},\
-                {type:"spawn0",Pos:{x:0d,y:0d,z:45.0d,ry:180d}},\
-                {type:"spawn1",Pos:{x:0d,y:0d,z:-45.0d,ry:0d}},\
-                {type:"spawn2",Pos:{x:29.0d,y:0d,z:0d,ry:90d}},\
-                {type:"spawn3",Pos:{x:-29.0d,y:0d,z:0d,ry:-90d}}\
+                {type:"spawn_0",Pos:{x:0d,y:0d,z:45.0d,ry:180d}},\
+                {type:"spawn_1",Pos:{x:0d,y:0d,z:-45.0d,ry:0d}},\
+                {type:"spawn_2",Pos:{x:29.0d,y:0d,z:0d,ry:90d}},\
+                {type:"spawn_3",Pos:{x:-29.0d,y:0d,z:0d,ry:-90d}}\
                 ]\
             }
         
