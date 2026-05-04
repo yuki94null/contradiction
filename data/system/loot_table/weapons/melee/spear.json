@@ -11,8 +11,8 @@
                             "function": "set_components",
                             "components": {
                                 "minecraft:custom_data":{
-                                    "Melee": {
-                                        "Kinds": "Spear"
+                                    "melee": {
+                                        "kinds": "spear"
                                     }
                                 },
                                 "attribute_modifiers": [

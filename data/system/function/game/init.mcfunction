@@ -2,15 +2,15 @@
     ## stopwatch
         stopwatch remove .:game
     ## kill
-        kill @e[type=!player,tag=Player]
-        kill @e[tag=Kill]
+        kill @e[type=!player,tag=player]
+        kill @e[tag=kill]
     ## data
-        data modify storage .:system Game.State set value false
-        data modify storage .:system Game.LimitTime set value 0
+        data modify storage .:system game.state set value false
+        data modify storage .:system game.limit_time set value 0
     ## tag
-        tag @e remove Queue
-        tag @e[tag=Player] remove Player0
-        tag @e[tag=Player] remove Player1
-        tag @e[tag=Player] remove Player2
-        tag @e[tag=Player] remove Player3
-        tag @e[tag=Player] remove Player
+        tag @e remove queue
+        tag @e[tag=player] remove player_0
+        tag @e[tag=player] remove player_1
+        tag @e[tag=player] remove player_2
+        tag @e[tag=player] remove player_3
+        tag @e[tag=player] remove player

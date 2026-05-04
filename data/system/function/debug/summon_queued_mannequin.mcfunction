@@ -1,1 +1,1 @@
-summon mannequin ~ ~ ~ {Tags:[Queue]}
+summon mannequin ~ ~ ~ {Tags:[queue]}

@@ -1,20 +1,20 @@
 # game/set_player_pos
     ## init
-        data remove storage .:system Tmp
-    ## TP
+        data remove storage .:system tmp
+    ## tP
         ### データ成形
-            data modify storage .:system Tmp.cx set from storage .:map CurrentMap.Points[{Type:"Center"}].Pos.x
-            data modify storage .:system Tmp.cy set from storage .:map CurrentMap.Points[{Type:"Center"}].Pos.y
-            data modify storage .:system Tmp.cz set from storage .:map CurrentMap.Points[{Type:"Center"}].Pos.z
+            data modify storage .:system tmp.cx set from storage .:map current_map.points[{type:"center"}].Pos.x
+            data modify storage .:system tmp.cy set from storage .:map current_map.points[{type:"center"}].Pos.y
+            data modify storage .:system tmp.cz set from storage .:map current_map.points[{type:"center"}].Pos.z
 
-            $data modify storage .:system Tmp.x set from storage .:map CurrentMap.Points[{Type:"Spawn$(Index)"}].Pos.x
-            $data modify storage .:system Tmp.y set from storage .:map CurrentMap.Points[{Type:"Spawn$(Index)"}].Pos.y
-            $data modify storage .:system Tmp.z set from storage .:map CurrentMap.Points[{Type:"Spawn$(Index)"}].Pos.z
-            $data modify storage .:system Tmp.ry set from storage .:map CurrentMap.Points[{Type:"Spawn$(Index)"}].Pos.ry
+            $data modify storage .:system tmp.x set from storage .:map current_map.points[{type:"spawn$(index)"}].Pos.x
+            $data modify storage .:system tmp.y set from storage .:map current_map.points[{type:"spawn$(index)"}].Pos.y
+            $data modify storage .:system tmp.z set from storage .:map current_map.points[{type:"spawn$(index)"}].Pos.z
+            $data modify storage .:system tmp.ry set from storage .:map current_map.points[{type:"spawn$(index)"}].Pos.ry
         ### mcr
-            function system:game/mcr_set_player_pos with storage .:system Tmp
+            function system:game/mcr_set_player_pos with storage .:system tmp
     ## tidying
-        ## Index
-            execute store result storage .:system Index int 1.0 run scoreboard players add #Tmp global 1
+        ## index
+            execute store result storage .:system index int 1.0 run scoreboard players add #tmp global 1
         ## タグ剥奪
-            tag @s remove Queue
+            tag @s remove queue

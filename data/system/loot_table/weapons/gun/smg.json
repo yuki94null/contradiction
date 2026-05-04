@@ -11,9 +11,9 @@
                             "function": "set_components",
                             "components": {
                                 "minecraft:custom_data":{
-                                    "Type":"Gun",
-                                    "Gun":{
-                                        "Kinds": "SMG"
+                                    "type":"gun",
+                                    "gun":{
+                                        "kinds": "smg"
                                     }
                                 },
                                 "attribute_modifiers": [

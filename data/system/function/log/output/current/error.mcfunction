@@ -1,10 +1,10 @@
 # log/output/current/error
     ## init
-        data remove storage .:log Output
-        data modify storage .:log Output.Coef set value 1
+        data remove storage .:log output
+        data modify storage .:log output.coef set value 1
     ## ログの種類をエラーにセット
-        data modify storage .:log Output.Type set value "Error"
-    ## Indexを一番新しいデータにセット
-        execute store result storage .:log Output.Index int 0.9999999999 run data get storage .:log Error
+        data modify storage .:log output.type set value "error"
+    ## indexを一番新しいデータにセット
+        execute store result storage .:log output.index int 0.9999999999 run data get storage .:log error
     ## をもとにデータを取得
-        function system:log/output/mcr_get_data with storage .:log Output
+        function system:log/output/mcr_get_data with storage .:log output

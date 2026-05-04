@@ -1,1 +1,1 @@
-data remove storage .:log Error
+data remove storage .:log error

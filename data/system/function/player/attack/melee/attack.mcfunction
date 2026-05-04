@@ -1,18 +1,18 @@
 # player/attack/melee/attack
-    $say $(Melee)
+    $say $(melee)
     ## init
-        tag @s add AttackTmp
+        tag @s add attack_tmp
         tag @e remove bounding_cuboid
     ## 判定
         function km_bounding:cuboid/ with storage km_bounding:
         ### 自分を外す
             tag @s remove bounding_cuboid
         ### 近接のやつ外す
-            tag @e[tag=bounding_cuboid,team=Melee] remove bounding_cuboid
+            tag @e[tag=bounding_cuboid,team=melee] remove bounding_cuboid
     ##
-        $execute as @e[tag=bounding_cuboid] run damage @s $(MeleeDamage) player_attack by @n[tag=AttackTmp]
+        $execute as @e[tag=bounding_cuboid] run damage @s $(melee_damage) player_attack by @n[tag=attack_tmp]
     ## tidying
         ### tag
-            tag @s remove AttackTmp
+            tag @s remove attack_tmp
         ### set ct
-            $scoreboard players set @s attackct $(AttackCT)
+            $scoreboard players set @s attack_ct $(attack_ct)

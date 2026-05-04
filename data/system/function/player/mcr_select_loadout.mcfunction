@@ -1,11 +1,11 @@
 # player/select_loadout
     ##
-        $data modify storage .:system Player[{UUID:"$(UUID)"}].Melee set value "$(Melee)"
-        $data modify storage .:system Player[{UUID:"$(UUID)"}].Gun set value "$(Gun)"
+        $data modify storage .:system player[{UUID:"$(UUID)"}].melee set value "$(melee)"
+        $data modify storage .:system player[{UUID:"$(UUID)"}].gun set value "$(gun)"
 
     ## メッセージ
         $tellraw @s [\
-            {"translate":"selectloadout",with:[{"translate":"$(Loadout)","color":gold}]},{"text":"\n        ","color":white},\
-            {"translate":"Melee","color":red},{"text":": \"","color":white},{"translate":"$(Melee)","color":green},{"text":"\" ","color":white},\
-            {"translate":"Gun","color":blue},{"text":": \"","color":white},{"translate":"$(Gun)","color":green},{"text":"\"","color":white}\
+            {"translate":"select_loadout",with:[{"translate":"$(loadout)","color":gold}]},{"text":"\n        ","color":white},\
+            {"translate":"melee","color":red},{"text":": \"","color":white},{"translate":"$(melee)","color":green},{"text":"\" ","color":white},\
+            {"translate":"gun","color":blue},{"text":": \"","color":white},{"translate":"$(gun)","color":green},{"text":"\"","color":white}\
         ]

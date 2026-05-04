@@ -6,8 +6,8 @@
     ## score reset
         scoreboard players reset @s leave
     ## tag remove
-        tag @s remove Queue
-        tag @s remove Player0
-        tag @s remove Player1
-        tag @s remove Player2
-        tag @s remove Player3
+        tag @s remove queue
+        tag @s remove player_0
+        tag @s remove player_1
+        tag @s remove player_2
+        tag @s remove player_3
