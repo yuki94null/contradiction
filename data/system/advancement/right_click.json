@@ -1,7 +1,7 @@
 {
     "criteria": {
         " ":{
-            "trigger": "player_hurt_entity",
+            "trigger": "player_interacted_with_entity",
             "conditions": {
                 "entity": {
                     "type": "interaction"

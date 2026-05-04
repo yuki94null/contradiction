@@ -29,7 +29,8 @@
             scoreboard objectives add kill playerKillCount
             scoreboard objectives add kill_with_melee dummy
             scoreboard objectives add kill_with_gun dummy
-            scoreboard objectives add attack_ct dummy
+            scoreboard objectives add melee_ct dummy
+            scoreboard objectives add gun_ct dummy
         ### set
 
 
@@ -69,11 +70,10 @@
             }
         
         data remove storage .:system weapon
-        data modify storage .:system weapon append value {loadout:knight,melee:"spear",gun:"pistle",melee_damage:1.0,attack_ct:8,km_bounding:{x_plus:0.5d,z_plus:7.5d,x_minus:0.5d}}
-        data modify storage .:system weapon append value {loadout:breaker,melee:"axe",gun:"sg",melee_damage:1.0,attack_ct:10,km_bounding:{x_plus:0.5d,z_plus:3.5d,x_minus:0.5d}}
-        data modify storage .:system weapon append value {loadout:duelist,melee:"sword",gun:"smg",melee_damage:1.0,attack_ct:6,km_bounding:{x_plus:0.5d,z_plus:4.0d,x_minus:0.5d}}
-        data modify storage .:system weapon append value {loadout:suppressor,melee:"scythe",gun:"ar",melee_damage:1.0,attack_ct:4,km_bounding:{x_plus:2.0d,z_plus:3.0d,x_minus:2.0d}}
-        data modify storage .:system weapon append value {loadout:assassin,melee:"knife",gun:"sr",melee_damage:1.0,attack_ct:2,km_bounding:{x_plus:0.5d,z_plus:3.0d,x_minus:0.5d}}
-
+        data modify storage .:system weapon append value {loadout:knight,melee:{kinds:"spear",melee_damage:1.0,melee_ct:8,km_bounding:{x_plus:0.5d,z_plus:7.5d,x_minus:0.5d}},gun:{kinds:"pistle",gun_ct:4}}
+        data modify storage .:system weapon append value {loadout:breaker,melee:{kinds:"axe",melee_damage:1.0,melee_ct:10,km_bounding:{x_plus:0.5d,z_plus:3.5d,x_minus:0.5d}},gun:{kinds:"sg",gun_ct:15}}
+        data modify storage .:system weapon append value {loadout:duelist,melee:{kinds:"sword",melee_damage:1.0,melee_ct:6,km_bounding:{x_plus:0.5d,z_plus:4.0d,x_minus:0.5d}},gun:{kinds:"smg",gun_ct:1}}
+        data modify storage .:system weapon append value {loadout:suppressor,melee:{kinds:"scythe",melee_damage:1.0,melee_ct:4,km_bounding:{x_plus:2.0d,z_plus:3.0d,x_minus:2.0d}},gun:{kinds:"ar",gun_ct:3}}
+        data modify storage .:system weapon append value {loadout:assassin,melee:{kinds:"knife",melee_damage:1.0,melee_ct:2,km_bounding:{x_plus:0.5d,z_plus:3.0d,x_minus:0.5d}},gun:{kinds:"sr",gun_ct:30}}
     ## stopwatch
         stopwatch create .:log

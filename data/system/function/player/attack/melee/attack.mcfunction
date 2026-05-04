@@ -1,5 +1,5 @@
 # player/attack/melee/attack
-    $say $(melee)
+    $say $(kinds)
     ## init
         tag @s add attack_tmp
         tag @e remove bounding_cuboid
@@ -15,4 +15,4 @@
         ### tag
             tag @s remove attack_tmp
         ### set ct
-            $scoreboard players set @s attack_ct $(attack_ct)
+            $scoreboard players set @s melee_ct $(melee_ct)
