@@ -1,8 +1,9 @@
 # game/start
     ## 人数が足りない
+        execute if data storage .:game game{state:true} run return run function system:log/error/add {error_id:"game.start.while_game",error_info:"試合中です"}
         execute store result score $player_count global if entity @e[tag=queue]
-        execute if score $player_count global matches ..1 run return run function system:log/error/add {error_id:"game.start.playershortage",error_info:"人数が足りず始められません"}
-        execute if score $player_count global matches 5.. run return run function system:log/error/add {error_id:"game.start.playerexcess",error_info:"人数が足りず始められません"}
+        execute if score $player_count global matches ..1 run return run function system:log/error/add {error_id:"game.start.player_shortage",error_info:"人数が足りず始められません"}
+        execute if score $player_count global matches 5.. run return run function system:log/error/add {error_id:"game.start.player_excess",error_info:"人数が足りず始められません"}
     ## マップの要素数を取得してランダムする
         execute store result score #map_count global run data get storage .:map maps
         execute store result score #random global run random value 1..1000000000

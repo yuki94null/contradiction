@@ -26,6 +26,33 @@
 interactionで覆ってレイキャストで判定
 -> 範囲攻撃や奥行き攻撃なども可能
 
+銃の仕様
+
+- `bullet_speed`
+- `fall_angle`
+- `diffusion_angle`
+- `bullet_damage`
+- `gun_ct`
+- `reload_time`
+- `magazine`
+- `portable_bullet`(の最大値)
+- `add_bullet`(melee側)
+
+弾は1tickで`bullet_speed`分進む
+毎ティック`fall_angle`分下を向き、落下する
+射撃時に最大で`rx`,`ry`がともに+-`diffusion_angle`分傾く
+
+ヒット時には`bullet_damage`分のダメージが入る
+
+射撃した後には`gun_ct`分の射撃クールタイムが入り、時間が立つまでは射撃できない
+
+リロードは、剣を持っているときかつ、`portable_bullet`(今回はスコア)が存在するときにのみ行われる
+剣を持って`reload_time`tick経過すると最大で`magazine`分までリロードされる
+リロードするとリロードした分だけ`portable_bullet`を消費する
+`portable_bullet`を貯めるには、剣で攻撃を当てる必要がある
+剣で攻撃を当てると、`add_bullet`分だけ`poartable_bullet`に加算される
+銃を持ったときに`poartable_bullet`(スコア)を`poartable_bullet`(最大値)に丸める
+
 ### 武器組み合わせ案
 
 射程と威力は反比例し、
