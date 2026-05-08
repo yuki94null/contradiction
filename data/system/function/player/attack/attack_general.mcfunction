@@ -19,4 +19,4 @@
 
         ### gun
             execute unless score @s gun_ct matches 1.. if data storage .:game Item.components."minecraft:custom_data".weapon{type:"gun"} run \
-                function system:player/attack/gun/attack with storage .:game tmp.weapon
+                function system:player/attack/gun/summon_bullet with storage .:game tmp.weapon

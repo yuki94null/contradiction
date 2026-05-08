@@ -31,6 +31,7 @@
             scoreboard objectives add kill_with_gun dummy
             scoreboard objectives add melee_ct dummy
             scoreboard objectives add gun_ct dummy
+            scoreboard objectives add bullet_life_time dummy
         ### set
 
 

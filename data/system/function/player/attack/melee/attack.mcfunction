@@ -4,7 +4,7 @@
         tag @s add attack_tmp
         tag @e remove bounding_cuboid
     ## 判定
-        function km_bounding:cuboid/ with storage km_bounding:
+        function km_bounding:cuboid/
         ### 自分を外す
             tag @s remove bounding_cuboid
         ### 近接のやつ外す
