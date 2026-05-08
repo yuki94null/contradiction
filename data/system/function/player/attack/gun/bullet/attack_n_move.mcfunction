@@ -13,5 +13,5 @@
 
     ## tidying
         scoreboard players add @s bullet_life_time 1
-        kill @s[scores={bullet_life_time=40..}]
+        kill @s[scores={bullet_life_time=20..}]
         tag @e remove same_uuid

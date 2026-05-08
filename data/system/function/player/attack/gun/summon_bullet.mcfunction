@@ -3,7 +3,7 @@
     ## init
         tag @e remove attack_tmp
     ##
-        execute anchored eyes positioned ^ ^ ^ run summon marker ~ ~ ~ {Tags:[attack_tmp,bullet],NoGravity:1b}
+        execute anchored eyes positioned ^ ^ ^ run summon text_display ~ ~ ~ {Tags:[attack_tmp,bullet],NoGravity:1b}
     ## 
         data modify entity @n[tag=attack_tmp] data.bullet set from storage .:game tmp.weapon
         data modify entity @n[tag=attack_tmp] data.bullet.owner set from entity @s UUID
