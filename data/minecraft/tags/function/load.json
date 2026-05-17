@@ -2,6 +2,7 @@
     "values": [
         {"id": "system:load","required": false},
         {"id": "km_bounding:zz/common/reload", "required": false},
-        {"id": "p_motion:system/load", "required": false}
+        {"id": "p_motion:system/load", "required": false},
+        {"id": "block_exploration01:init","required": false}
     ]
 }
