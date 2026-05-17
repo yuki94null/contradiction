@@ -3,7 +3,7 @@
         stopwatch remove .:game
     ## kill
         kill @e[type=!player,tag=player]
-        kill @e[tag=kill]
+        kill @e[tag=interaction]
     ## data
         data modify storage .:game game.state set value false
         data modify storage .:game game.limit_time set value 0

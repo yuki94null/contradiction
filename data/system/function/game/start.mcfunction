@@ -12,16 +12,15 @@
         ### マクロで選択
             function system:game/mcr_set_map with storage .:map
         
-    ## プレイヤーをtP
-        execute store result storage .:system index int 1.0 run scoreboard players set #tmp global 0
-        execute as @n[sort=random,tag=queue] unless function system:game/set_tag run function system:game/set_player_pos with storage .:system
-        execute as @n[sort=random,tag=queue] unless function system:game/set_tag run function system:game/set_player_pos with storage .:system
-        execute as @n[sort=random,tag=queue] unless function system:game/set_tag run function system:game/set_player_pos with storage .:system
-        execute as @n[sort=random,tag=queue] unless function system:game/set_tag run function system:game/set_player_pos with storage .:system
-        
-        ### スポーン位置設定
-            execute as @e[tag=player] at @s run spawnpoint @s ~ ~ ~ ~ ~
-            execute as @e[tag=player] at @s run attribute @s knockback_resistance base set 1.0
+    ## プレイヤーをtpなど
+        ### init
+            data remove storage .:game player
+        ### 順に処理
+            execute store result storage .:system index int 1.0 run scoreboard players set #tmp global 0
+            execute as @n[sort=random,tag=queue] unless function system:game/set_tag run function system:game/set_player_pos with storage .:system
+            execute as @n[sort=random,tag=queue] unless function system:game/set_tag run function system:game/set_player_pos with storage .:system
+            execute as @n[sort=random,tag=queue] unless function system:game/set_tag run function system:game/set_player_pos with storage .:system
+            execute as @n[sort=random,tag=queue] unless function system:game/set_tag run function system:game/set_player_pos with storage .:system
     ## set
         data modify storage .:game game.state set value true
         data modify storage .:game game.limit_time set value 60

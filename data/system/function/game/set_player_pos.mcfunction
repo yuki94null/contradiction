@@ -1,7 +1,11 @@
 # game/set_player_pos
     ## init
         data remove storage .:system tmp
-    ## tP
+
+    ## 武器セット
+        function system:player/get_selected_loadout with entity @s
+        $data modify storage .:game player.$(index).items set from storage .:system tmp
+    ## tp
         ### データ成形
             data modify storage .:system tmp.cx set from storage .:map current_map.points[{type:"center"}].Pos.x
             data modify storage .:system tmp.cy set from storage .:map current_map.points[{type:"center"}].Pos.y
@@ -16,5 +20,6 @@
     ## tidying
         ## index
             execute store result storage .:system index int 1.0 run scoreboard players add #tmp global 1
+            attribute @s knockback_resistance base set 1.0
         ## タグ剥奪
             tag @s remove queue

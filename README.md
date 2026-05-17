@@ -53,6 +53,9 @@ interactionで覆ってレイキャストで判定
 剣で攻撃を当てると、`add_bullet`分だけ`poartable_bullet`に加算される
 銃を持ったときに`poartable_bullet`(スコア)を`poartable_bullet`(最大値)に丸める
 
+ホットバー右端に顔面と耐久値体力を表示
+順番はキル数ランキング
+
 ### 武器組み合わせ案
 
 射程と威力は反比例し、
@@ -76,3 +79,4 @@ interactionで覆ってレイキャストで判定
 
 柔軟なエンティティの範囲指定 `km-bounding` (`https://github.com/komaramune/km-bounding`)
 プレイヤーにモーションをかける `p_motion` (`https://github.com/Hirobao1/CustomEnchant_PlayerMotion`)
+視点先のブロックの位置にする `block_exploration01` (`https://github.com/MCJE-Tech-Community/Datapack-WIki`)

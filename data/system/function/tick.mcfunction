@@ -6,3 +6,5 @@
 
     ## as player
         execute as @a at @s run function system:player/tick
+
+        function system:sound/tick

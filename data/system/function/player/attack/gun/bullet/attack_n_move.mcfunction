@@ -7,7 +7,7 @@
             #### オーナー見つける
                 execute as @e[tag=player] run function system:function/find_same_uuid/input with storage .:game tmp
 
-            execute store result score #Tmp global run data get entity @s data.bullet.bullet_speed
+            execute store result score $tmp global run data get entity @s data.bullet.bullet_speed
     ## 移動とダメージ
         function system:player/attack/gun/bullet/mcr_attack_n_move with entity @s data.bullet
 
