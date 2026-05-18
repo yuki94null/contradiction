@@ -10,6 +10,39 @@
                         {
                             "function": "set_components",
                             "components": {
+                                "item_name": [
+                                    {
+                                    "translate": "assassin" 
+                                    },
+                                    {
+                                    "text": " - "
+                                    },
+                                    {
+                                        "translate": "melee"
+                                    },
+                                    {
+                                        "text": " : "
+                                    },
+                                    {
+                                        "translate": "knife"
+                                    }
+                            ],
+                                "lore": [
+                                    {
+                                        "translate": "weapon.lore",
+                                        "with": [
+                                            {"translate": "assassin"},
+                                            {"translate": "melee"},
+                                            {"translate": "knife"}
+                                        ]
+                                    },
+                                    {
+                                        "translate": "knife.lore.0"
+                                    },
+                                    {
+                                        "translate": "knife.lore.1"
+                                    }
+                                ],
                                 "minecraft:custom_data":{
                                     "weapon": {
                                         "type": "melee",

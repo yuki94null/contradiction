@@ -14,3 +14,4 @@
             execute if entity @s[tag=queue] run return run function system:log/error/add {error_id:"game.join.already_queued",error_info:"すでにjoinしています"}
     ## ジョインしたやつだよ～
         tag @s add queue
+        tag @s add user

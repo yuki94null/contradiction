@@ -3,6 +3,10 @@
         execute if score @s leave matches 1.. run function system:player/init
     ## join team
         execute if entity @s[tag=!team_set_tick] run function system:player/set_team
+        
+    ## hotbar
+        ### weaponをset | indicator用にkill数ソート
+            function system:game/hotbar/root
 
     ## score
         execute if score @s melee_ct matches 1 run playsound entity.experience_orb.pickup player @s ~ ~ ~ 1.0 2.0 0.0

@@ -1,10 +1,8 @@
 # game/hotbar/root
     ## init
         data remove storage .:game tmp
+        function system:player/get_selected_loadout
     ## weapon
-        execute if entity @s[tag=player_0] run function system:game/hotbar/set_weapons with storage .:game player.0.items
-        execute if entity @s[tag=player_1] run function system:game/hotbar/set_weapons with storage .:game player.1.items
-        execute if entity @s[tag=player_2] run function system:game/hotbar/set_weapons with storage .:game player.2.items
-        execute if entity @s[tag=player_3] run function system:game/hotbar/set_weapons with storage .:game player.3.items
+        function system:item/selected_loadout
     ## health indicator用にkill数でソート
-        function system:game/hotbar/sort
+        execute if entity @s[tag=player] run function system:game/hotbar/sort

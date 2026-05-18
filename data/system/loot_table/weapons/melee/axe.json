@@ -10,6 +10,39 @@
                         {
                             "function": "set_components",
                             "components": {
+                                "item_name": [
+                                    {
+                                    "translate": "breaker" 
+                                    },
+                                    {
+                                    "text": " - "
+                                    },
+                                    {
+                                        "translate": "melee"
+                                    },
+                                    {
+                                        "text": " : "
+                                    },
+                                    {
+                                        "translate": "axe"
+                                    }
+                            ],
+                                "lore": [
+                                    {
+                                        "translate": "weapon.lore",
+                                        "with": [
+                                            {"translate": "breaker"},
+                                            {"translate": "melee"},
+                                            {"translate": "axe"}
+                                        ]
+                                    },
+                                    {
+                                        "translate": "axe.lore.0"
+                                    },
+                                    {
+                                        "translate": "axe.lore.1"
+                                    }
+                                ],
                                 "minecraft:custom_data":{
                                     "weapon": {
                                         "type": "melee",

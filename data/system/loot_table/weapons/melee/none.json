@@ -12,41 +12,41 @@
                             "components": {
                                 "item_name": [
                                     {
-                                    "translate": "breaker" 
+                                    "translate": "none" 
                                     },
                                     {
                                     "text": " - "
                                     },
                                     {
-                                        "translate": "gun"
+                                        "translate": "melee"
                                     },
                                     {
                                         "text": " : "
                                     },
                                     {
-                                        "translate": "sg"
+                                        "translate": "none"
                                     }
                             ],
                                 "lore": [
                                     {
                                         "translate": "weapon.lore",
                                         "with": [
-                                            {"translate": "breaker"},
-                                            {"translate": "gun"},
-                                            {"translate": "sg"}
+                                            {"translate": "none"},
+                                            {"translate": "none"},
+                                            {"translate": "none"}
                                         ]
                                     },
                                     {
-                                        "translate": "sg.lore.0"
+                                        "translate": "none.lore.0"
                                     },
                                     {
-                                        "translate": "sg.lore.1"
+                                        "translate": "ar.lore.1"
                                     }
                                 ],
                                 "minecraft:custom_data":{
-                                    "weapon":{
-                                        "type": "gun",
-                                        "kinds": "sg"
+                                    "weapon": {
+                                        "type": "melee",
+                                        "kinds": "none"
                                     }
                                 },
                                 "attribute_modifiers": [

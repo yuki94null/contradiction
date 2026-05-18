@@ -10,6 +10,39 @@
                         {
                             "function": "set_components",
                             "components": {
+                                "item_name": [
+                                    {
+                                    "translate": "knight" 
+                                    },
+                                    {
+                                    "text": " - "
+                                    },
+                                    {
+                                        "translate": "melee"
+                                    },
+                                    {
+                                        "text": " : "
+                                    },
+                                    {
+                                        "translate": "spear"
+                                    }
+                            ],
+                                "lore": [
+                                    {
+                                        "translate": "weapon.lore",
+                                        "with": [
+                                            {"translate": "knight"},
+                                            {"translate": "melee"},
+                                            {"translate": "spear"}
+                                        ]
+                                    },
+                                    {
+                                        "translate": "spear.lore.0"
+                                    },
+                                    {
+                                        "translate": "spear.lore.1"
+                                    }
+                                ],
                                 "minecraft:custom_data":{
                                     "weapon": {
                                         "type": "melee",

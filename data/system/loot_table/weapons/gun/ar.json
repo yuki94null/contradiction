@@ -10,6 +10,39 @@
                         {
                             "function": "set_components",
                             "components": {
+                                "item_name": [
+                                    {
+                                    "translate": "suppressor" 
+                                    },
+                                    {
+                                    "text": " - "
+                                    },
+                                    {
+                                        "translate": "gun"
+                                    },
+                                    {
+                                        "text": " : "
+                                    },
+                                    {
+                                        "translate": "ar"
+                                    }
+                            ],
+                                "lore": [
+                                    {
+                                        "translate": "weapon.lore",
+                                        "with": [
+                                            {"translate": "suppressor"},
+                                            {"translate": "gun"},
+                                            {"translate": "ar"}
+                                        ]
+                                    },
+                                    {
+                                        "translate": "ar.lore.0"
+                                    },
+                                    {
+                                        "translate": "ar.lore.1"
+                                    }
+                                ],
                                 "minecraft:custom_data":{
                                     "weapon":{
                                         "type": "gun",

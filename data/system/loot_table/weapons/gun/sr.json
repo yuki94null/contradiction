@@ -10,6 +10,39 @@
                         {
                             "function": "set_components",
                             "components": {
+                                "item_name": [
+                                    {
+                                    "translate": "assassin" 
+                                    },
+                                    {
+                                    "text": " - "
+                                    },
+                                    {
+                                        "translate": "gun"
+                                    },
+                                    {
+                                        "text": " : "
+                                    },
+                                    {
+                                        "translate": "sr"
+                                    }
+                            ],
+                                "lore": [
+                                    {
+                                        "translate": "weapon.lore",
+                                        "with": [
+                                            {"translate": "assassin"},
+                                            {"translate": "gun"},
+                                            {"translate": "sr"}
+                                        ]
+                                    },
+                                    {
+                                        "translate": "sr.lore.0"
+                                    },
+                                    {
+                                        "translate": "sr.lore.1"
+                                    }
+                                ],
                                 "minecraft:custom_data":{
                                     "weapon":{
                                         "type": "gun",

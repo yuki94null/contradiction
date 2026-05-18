@@ -22,7 +22,7 @@
         ### gun
             execute store result score $tmp global run data get storage .:game tmp.weapon.simu_shots
             #### 負荷検証の4倍化
-            # execute store result score $tmp global run data get storage .:game tmp.weapon.simu_shots 4.0
+            execute store result score $tmp global run data get storage .:game tmp.weapon.simu_shots 4.0
 
             execute unless score @s gun_ct matches 1.. if data storage .:game Item.components."minecraft:custom_data".weapon{type:"gun"} run \
                 function system:player/attack/gun/summon_bullet with storage .:game tmp.weapon

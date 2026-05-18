@@ -10,6 +10,39 @@
                         {
                             "function": "set_components",
                             "components": {
+                                "item_name": [
+                                    {
+                                    "translate": "duelist" 
+                                    },
+                                    {
+                                    "text": " - "
+                                    },
+                                    {
+                                        "translate": "melee"
+                                    },
+                                    {
+                                        "text": " : "
+                                    },
+                                    {
+                                        "translate": "sword"
+                                    }
+                            ],
+                                "lore": [
+                                    {
+                                        "translate": "weapon.lore",
+                                        "with": [
+                                            {"translate": "duelist","color":"gold"  },
+                                            {"translate": "melee"  ,"color":"yellow"},
+                                            {"translate": "sword"  ,"color":"green" }
+                                        ]
+                                    },
+                                    {
+                                        "translate": "sword.lore.0"
+                                    },
+                                    {
+                                        "translate": "sword.lore.1"
+                                    }
+                                ],
                                 "minecraft:custom_data":{
                                     "weapon": {
                                         "type": "melee",

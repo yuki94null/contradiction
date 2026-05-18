@@ -10,6 +10,39 @@
                         {
                             "function": "set_components",
                             "components": {
+                                "item_name": [
+                                    {
+                                    "translate": "duelist" 
+                                    },
+                                    {
+                                    "text": " - "
+                                    },
+                                    {
+                                        "translate": "gun"
+                                    },
+                                    {
+                                        "text": " : "
+                                    },
+                                    {
+                                        "translate": "smg"
+                                    }
+                            ],
+                                "lore": [
+                                    {
+                                        "translate": "weapon.lore",
+                                        "with": [
+                                            {"translate": "duelist"},
+                                            {"translate": "gun"},
+                                            {"translate": "smg"}
+                                        ]
+                                    },
+                                    {
+                                        "translate": "smg.lore.0"
+                                    },
+                                    {
+                                        "translate": "smg.lore.1"
+                                    }
+                                ],
                                 "minecraft:custom_data":{
                                     "weapon":{
                                         "type": "gun",

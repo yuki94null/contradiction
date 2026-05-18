@@ -1,0 +1,38 @@
+{
+    "pools": [
+        {
+            "rolls": 1.0,
+            "entries": [
+                {
+                    "type": "item",
+                    "name": "command_block",
+                    "functions": [
+                        {
+                            "function": "set_components",
+                            "components": {
+                                "minecraft:custom_data":{
+                                    "weapon":{
+                                        "type": "gun",
+                                        "kinds": "none"
+                                    }
+                                },
+                                "attribute_modifiers": [
+                                    {
+                                        "id": ".:system",
+                                        "amount": -1.0,
+                                        "operation": "add_multiplied_total",
+                                        "type": "block_interaction_range",
+                                        "display":  {
+                                            "type": "hidden"
+                                        },
+                                        "slot": "hand"
+                                    }
+                                ]
+                            }
+                        }
+                    ]
+                }
+            ]
+        }
+    ]
+}

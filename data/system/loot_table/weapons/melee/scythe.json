@@ -10,6 +10,70 @@
                         {
                             "function": "set_components",
                             "components": {
+                                "item_name": [
+                                    {
+                                    "translate": "suppressor","color":"red"
+                                    },
+                                    {
+                                    "text": " - ","color":"red"
+                                    },
+                                    {
+                                        "translate": "melee","color":"red"
+                                    },
+                                    {
+                                        "text": " : ","color":"red"
+                                    },
+                                    {
+                                        "translate": "scythe","color":"red"
+                                    }
+                            ],
+                                "lore": [
+                                    {
+                                        "translate": "weapon.lore",
+                                        "color": "white",
+                                        "italic": false,
+                                        "with": [
+                                            {"translate": "suppressor","color":"gold"  },
+                                            {"translate": "melee"     ,"color":"red"},
+                                            {"translate": "scythe"    ,"color":"green" }
+                                        ]
+                                    },
+                                    {
+                                        "translate": "scythe.lore.0",
+                                        "color": "white",
+                                        "italic": false
+                                    },
+                                    {
+                                        "translate": "scythe.lore.1",
+                                        "color": "white",
+                                        "italic": false
+                                    },
+                                    {
+                                        "text": ""
+                                    },
+                                    {
+                                        "translate": "melee.lore",
+                                        "color": "white",
+                                        "italic": false,
+                                        "with": [
+                                            {
+                                                "nbt": "weapon[{melee:{kinds:\"scythe\"}}].melee.melee_damage",
+                                                "storage": ".:system",
+                                                "plain": true
+                                            },
+                                            {
+                                                "nbt": "weapon[{melee:{kinds:scythe}}].melee.melee_ct",
+                                                "storage": ".:system",
+                                                "plain": true
+                                            },
+                                            {
+                                                "nbt": "weapon[{melee:{kinds:scythe}}].melee.add_bullet",
+                                                "storage": ".:system",
+                                                "plain": true
+                                            }
+                                        ]
+                                    }
+                                ],
                                 "minecraft:custom_data":{
                                     "weapon": {
                                         "type": "melee",

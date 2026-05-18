@@ -10,6 +10,39 @@
                         {
                             "function": "set_components",
                             "components": {
+                                "item_name": [
+                                    {
+                                    "translate": "knight" 
+                                    },
+                                    {
+                                    "text": " - "
+                                    },
+                                    {
+                                        "translate": "gun"
+                                    },
+                                    {
+                                        "text": " : "
+                                    },
+                                    {
+                                        "translate": "pistle"
+                                    }
+                            ],
+                                "lore": [
+                                    {
+                                        "translate": "weapon.lore",
+                                        "with": [
+                                            {"translate": "knight"},
+                                            {"translate": "gun"},
+                                            {"translate": "pistle"}
+                                        ]
+                                    },
+                                    {
+                                        "translate": "pistle.lore.0"
+                                    },
+                                    {
+                                        "translate": "pistle.lore.1"
+                                    }
+                                ],
                                 "minecraft:custom_data":{
                                     "weapon":{
                                         "type": "gun",
