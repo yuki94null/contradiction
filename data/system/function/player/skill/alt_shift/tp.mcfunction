@@ -1,0 +1,1 @@
+$tp @s @n[tag=alt_shift_anchor,nbt={data:{UUID:$(UUID)}}]

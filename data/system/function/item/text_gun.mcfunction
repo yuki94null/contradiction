@@ -1,3 +1,5 @@
+# item/text_gun
+
 $data modify storage .:system tmp.gun.lore set value \
 '\
 {"text":"$(bullet_damage)","color":"gold"},\

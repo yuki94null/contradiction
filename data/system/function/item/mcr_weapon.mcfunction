@@ -1,4 +1,4 @@
-#\
+# item/mcr_weapon
 
 $loot $(pass) loot {\
     "pools": [\
@@ -12,6 +12,7 @@ $loot $(pass) loot {\
                         {\
                             "function": "set_components",\
                             "components": {\
+                                "item_model": "system:$(type)/$(kinds)",\
                                 "item_name": [\
                                     {\
                                     "translate": "$(loadout)","color":"$(color)"\

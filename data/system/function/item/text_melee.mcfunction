@@ -1,3 +1,4 @@
+# item/text_melee
 $data modify storage .:system tmp.melee.lore set value \
 '\
 {"text":"$(melee_damage)","color":"gold"},\

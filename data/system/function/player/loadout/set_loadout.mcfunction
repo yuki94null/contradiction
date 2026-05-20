@@ -9,4 +9,4 @@
             $data modify storage .:system tmp.melee set from storage .:system weapon[{loadout:"$(loadout)"}].melee.kinds
             $data modify storage .:system tmp.gun set from storage .:system weapon[{loadout:"$(loadout)"}].gun.kinds
         ### マクロ
-            function system:player/mcr_select_loadout with storage .:system tmp
+            function system:player/loadout/mcr_set_loadout with storage .:system tmp

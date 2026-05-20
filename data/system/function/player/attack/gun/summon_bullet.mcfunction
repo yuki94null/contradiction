@@ -3,7 +3,8 @@
     ## init
         data remove storage .:game tmp.angle
     ##
-        execute anchored eyes positioned ^ ^ ^ run summon text_display ~ ~ ~ {Tags:[bullet_tmp,bullet],NoGravity:1b}
+        execute anchored eyes positioned ^ ^ ^ run summon text_display ~ ~ ~ {Tags:[bullet_tmp,bullet,player_bullet],NoGravity:1b}
+        execute if entity @s[tag=!player] run tag @e remove player_bullet
     ## 
         data modify entity @n[tag=bullet_tmp] data.bullet set from storage .:game tmp.weapon
         data modify entity @n[tag=bullet_tmp] data.bullet.owner set from entity @s UUID

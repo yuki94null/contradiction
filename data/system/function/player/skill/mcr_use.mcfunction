@@ -1,0 +1,1 @@
+$function system:player/skill/$(kinds)/root with storage .:system tmp.skill

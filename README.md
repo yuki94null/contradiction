@@ -182,6 +182,8 @@ gun:{kinds:"pistle",fall_angle:3,diffusion_angle:2,bullet_damage:5,bullet_speed:
 
 ### 移動スキル
 
+- ct
+
 移動スキル一覧
 
 1. blink
@@ -195,7 +197,7 @@ gun:{kinds:"pistle",fall_angle:3,diffusion_angle:2,bullet_damage:5,bullet_speed:
 視点方向を基準に、発動時のキー入力を元に加速度を与える
 backwardキーの場合は上向きのベクトルになる
 
-#### tp
+#### alt shift
 
 sneakで使用すると現在地にアンカーを配置する
 これはスキル使用に含まない
@@ -206,17 +208,17 @@ sneakで使用すると現在地にアンカーを配置する
 
 死亡時もアンカーは保持される
 
-#### ex
+#### bailout
 
 グローバル平面に並行なローカル座標で後ろ上方に加速度を与える
 着地する前にもう一度入力をすることで、移動入力をもとにもう一度加速する
 
-#### wayback
+#### fade assult
 
 レイキャストを飛ばし、当てたプレイヤーの背後にtpする
 外した場合もスキル使用判定となる
 
-#### sprint
+#### accele
 
 数秒間スピードアップのバフを得る
 

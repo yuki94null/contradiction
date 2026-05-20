@@ -3,7 +3,7 @@
         data remove storage .:system tmp
 
     ## 武器セット
-        function system:player/get_selected_loadout with entity @s
+        function system:player/get_selected with entity @s
         $data modify storage .:game player.$(index).items set from storage .:system tmp
     ## tp
         ### データ成形
