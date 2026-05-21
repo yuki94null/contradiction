@@ -6,15 +6,18 @@
     ## onground
         execute if predicate {condition:"entity_properties",entity:"this",predicate:{flags:{is_on_ground:true}}} run function system:player/onground
 
+    ## utils
+        execute if items entity @s player.cursor barrier run function system:player/retire
+
     ## skill
         ## passive
             function system:player/skill/root
         ## use
-            execute if items entity @s weapon.offhand * run function system:player/skill/use
+            execute if items entity @s[tag=user] weapon.offhand * run function system:player/skill/use
         
-    ## hotbar
+    ## inventory
         ### weaponをset | indicator用にkill数ソート
-            function system:game/hotbar/root
+            execute if entity @s[tag=user] run function system:game/inventory/root {sort:true}
 
 
     ## join team

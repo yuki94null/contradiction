@@ -10,6 +10,12 @@
         team modify none collisionRule always
         team modify none nametagVisibility never
         team modify none seeFriendlyInvisibles false
+        team add join "エントリー済み"
+        team modify join color green
+        team modify join friendlyFire false
+        team modify join collisionRule always
+        team modify join nametagVisibility never
+        team modify join seeFriendlyInvisibles false
         team add melee "近距離"
         team modify melee color red
         team modify melee friendlyFire false
@@ -25,6 +31,7 @@
     ## scoreboard
         ### add
             scoreboard objectives add global dummy
+            scoreboard objectives add time dummy
             scoreboard objectives add log dummy
             scoreboard objectives add leave custom:leave_game
             scoreboard objectives add death deathCount
@@ -49,6 +56,7 @@
         data modify storage .:system bool.1b set value true
         data modify storage .:system bool.1 set value true
         data modify storage .:system setting.max_health set value 40
+
 
         data remove storage .:map maps
         data modify storage .:map maps append value \
@@ -97,5 +105,22 @@
         ## サウンド
             data remove storage .:system music
             data modify storage .:system music.project_093 set value {loop:true,tick:1067}
+
+
+
+    ## summon
+        kill @e[tag=system]
+        summon text_display 5.00 5.00 16.00 {Tags:[system,ui_marker,ui_loadout],Rotation:[-90f,0f],data:{loadout:"knight"}}
+        summon text_display 5.00 5.00 23.00 {Tags:[system,ui_marker,ui_loadout],Rotation:[-90f,0f],data:{loadout:"breaker"}}
+        summon text_display 5.00 5.00 30.00 {Tags:[system,ui_marker,ui_loadout],Rotation:[-90f,0f],data:{loadout:"duelist"}}
+        summon text_display 5.00 5.00 37.00 {Tags:[system,ui_marker,ui_loadout],Rotation:[-90f,0f],data:{loadout:"suppressor"}}
+        summon text_display 5.00 5.00 44.00 {Tags:[system,ui_marker,ui_loadout],Rotation:[-90f,0f],data:{loadout:"assassin"}}
+
+        summon text_display 16.00 5.00 5.00 {Tags:[system,ui_marker,ui_skill],Rotation:[0f,0f],data:{skill:"blink"}}
+        summon text_display 23.00 5.00 5.00 {Tags:[system,ui_marker,ui_skill],Rotation:[0f,0f],data:{skill:"alt_shift"}}
+        summon text_display 30.00 5.00 5.00 {Tags:[system,ui_marker,ui_skill],Rotation:[0f,0f],data:{skill:"bailout"}}
+        summon text_display 37.00 5.00 5.00 {Tags:[system,ui_marker,ui_skill],Rotation:[0f,0f],data:{skill:"fade_assult"}}
+        summon text_display 44.00 5.00 5.00 {Tags:[system,ui_marker,ui_skill],Rotation:[0f,0f],data:{skill:"accele"}}
+        
     ## stopwatch
         stopwatch create .:log

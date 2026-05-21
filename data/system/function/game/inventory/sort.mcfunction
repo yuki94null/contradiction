@@ -1,7 +1,7 @@
-# game/hotbar/sort
+# game/inventory/sort
     ## キル数を保存して座標に
         execute store result storage .:game tmp.kill int 1.0 run scoreboard players get @s kill
-        function system:game/hotbar/summon with storage .:game tmp
+        function system:game/inventory/summon with storage .:game tmp
 
     ## 存在するプレイヤーの数だけ頭を出しておく
         item replace entity @e[tag=player] hotbar.8 with player_head

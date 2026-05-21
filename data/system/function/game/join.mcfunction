@@ -9,8 +9,8 @@
             execute unless data storage .:system tmp.gun run return fail
             execute unless data storage .:system tmp.skill run return fail
         ### 満員
-            execute store result score $player_count global if entity @e[tag=queue]
-            execute if score $player_count global matches 4.. run return run function system:log/error/add {error_id:"game.join.max_player",error_info:"キューが満員です"}
+            # execute store result score $player_count global if entity @e[tag=queue]
+            # execute if score $player_count global matches 4.. run return run function system:log/error/add {error_id:"game.join.max_player",error_info:"キューが満員です"}
         ### プレイヤーじゃない
             execute if entity @s[type=!player] run return run function system:log/error/add {error_id:"game.join.not_player",error_info:"joinしようとしましたが、主体がプレイヤーではありません"}
         ### 既ジョイン

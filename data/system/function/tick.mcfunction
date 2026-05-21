@@ -2,6 +2,8 @@
     ## time
         execute store result score $time global store result score time log run stopwatch query .:log 1.0
 
+    ## time
+        execute if score $begin_game time matches 1.. run function system:game/time/tm_begin_game
     ## interaction set
         function system:game/interaction/root
 

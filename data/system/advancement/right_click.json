@@ -10,6 +10,6 @@
         }
     },
     "rewards": {
-        "function": "system:player/attack/click"
+        "function": "system:player/click"
     }
 }

@@ -1,4 +1,4 @@
-# game/hotbar/summon
+# game/inventory/summon
     ## キル数の位置にsummon
         $summon snowball 0.0 $(kill).0 0.0 {Tags:[sort,tmp]}
     ## owner付与
