@@ -1,14 +1,21 @@
-say fade_assult
+# skill/fade_assult/root
+    ## スキル残数がなければリターン
+        execute unless score @s skill_charge matches 1.. run return fail
+    ## スキル発動時の汎用ファンクション
+        function system:player/skill/success with storage .:system tmp.skill
 
-execute unless score @s skill_charge matches 1.. run return fail
-function system:player/skill/success with storage .:system tmp.skill
+    ## 自分タグ付け
+        tag @s add skill_tmp
 
-tag @s add skill_tmp
+    ## 距離指定
+        scoreboard players set $tmp global 120
 
-scoreboard players set $tmp global 120
-execute anchored eyes positioned ^ ^ ^ run function system:player/skill/fade_assult/loop
+    ## 再帰で特定してタグ付け
+        execute anchored eyes positioned ^ ^ ^ run function system:player/skill/fade_assult/loop
 
-execute anchored eyes at @n[tag=fade_assult] positioned ^ ^ ^-2.5 facing entity @n[tag=fade_assult] feet run tp @s ~ ~ ~ ~ ~
+    ## ヒットしたやつの位置に
+        execute anchored eyes at @n[tag=fade_assult] positioned ^ ^ ^-2.5 facing entity @n[tag=fade_assult] feet run tp @s ~ ~ ~ ~ ~
 
-tag @e remove fade_assult
-tag @s remove skill_tmp
+    ## タグ外し
+        tag @e remove fade_assult
+        tag @s remove skill_tmp

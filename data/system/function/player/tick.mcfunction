@@ -1,4 +1,9 @@
 # player/tick
+    ## playsound
+        function system:sound/root
+    ## effect
+        effect give @s saturation infinite 0 true
+
     ## leave_game
         execute if score @s leave matches 1.. run function system:player/init
     ## death
@@ -23,6 +28,8 @@
     ## join team
         execute if entity @s[tag=!team_set_tick] run function system:player/set_team
 
+    ## reload
+        execute if items entity @s weapon.mainhand *[custom_data~{weapon:{type:"melee"}}] run function system:player/gun/reload/root
 
     ## score
         execute if score @s melee_ct matches 1 run playsound entity.experience_orb.pickup player @s ~ ~ ~ 1.0 2.0 0.0

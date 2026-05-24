@@ -25,9 +25,7 @@
             execute as @n[sort=random,tag=queue] unless function system:game/set_tag run function system:game/set_player_pos with storage .:system
             execute as @n[sort=random,tag=queue] unless function system:game/set_tag run function system:game/set_player_pos with storage .:system
     ## init
-        execute as @e[tag=player] run tag @s add game
-        execute as @e[tag=player] run gamemode adventure
-        execute as @e[tag=player] run function system:player/skill/alt_shift/kill_anchor with entity @s
+        execute as @e[tag=player] at @s run function system:game/begin_game_player
     ## set
         data modify storage .:game game.state set value true
         data modify storage .:game game.limit_time set value 60

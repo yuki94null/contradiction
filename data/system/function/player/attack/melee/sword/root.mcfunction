@@ -1,0 +1,1 @@
+playsound minecraft:entity.player.attack.sweep player @a ~ ~ ~ 1.0 1 0.0

@@ -6,6 +6,8 @@
             data modify storage .:game tmp.UUID set from entity @s data.bullet.owner
             #### オーナー見つける
                 execute as @e run function system:function/find_same_uuid/input with storage .:game tmp
+            
+            
 
             execute store result score $tmp global run data get entity @s data.bullet.bullet_speed
     ## 移動とダメージ

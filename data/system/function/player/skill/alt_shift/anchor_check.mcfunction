@@ -1,0 +1,1 @@
+$execute unless entity @n[tag=alt_shift_anchor,nbt={data:{UUID:$(UUID)}}] run tag @s add tmp

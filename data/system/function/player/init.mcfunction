@@ -5,6 +5,7 @@
         team leave @s
     ## score reset
         scoreboard players reset @s leave
+        scoreboard players reset @s sound
     ## tag remove
         tag @s remove queue
         tag @s remove player_0

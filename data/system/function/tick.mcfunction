@@ -4,6 +4,7 @@
 
     ## time
         execute if score $begin_game time matches 1.. run function system:game/time/tm_begin_game
+
     ## interaction set
         function system:game/interaction/root
 

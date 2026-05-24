@@ -1,0 +1,1 @@
+playsound minecraft:entity.firework_rocket.blast player @a ~ ~ ~ 1.0 1.5 0.0

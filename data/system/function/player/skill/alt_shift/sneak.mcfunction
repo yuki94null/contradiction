@@ -1,4 +1,3 @@
-
 $kill @e[tag=alt_shift_anchor,nbt={data:{UUID:$(UUID)}}]
 
 summon text_display ~ ~ ~ {Tags:[alt_shift_anchor,tmp]}

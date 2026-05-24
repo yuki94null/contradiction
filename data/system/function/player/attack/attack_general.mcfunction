@@ -12,20 +12,17 @@
     ## データを整形
         data modify storage .:game Item set from entity @s SelectedItem
         data modify storage .:game tmp set from storage .:game Item.components."minecraft:custom_data".weapon
-        function system:player/attack/mcr_copy_data with storage .:game tmp
+        function system:player/mcr_copy_data with storage .:game tmp
+        data modify storage .:game tmp.weapon set from storage .:system tmp.weapon
         data modify storage km_bounding: arguments.cuboid merge from storage .:game tmp.weapon.km_bounding
     ## 判定
         ### melee
             execute unless score @s melee_ct matches 1.. if data storage .:game Item.components."minecraft:custom_data".weapon{type:"melee"} run \
-                function system:player/attack/melee/attack with storage .:game tmp.weapon
+                function system:player/attack/melee/root with storage .:game tmp.weapon
 
         ### gun
-            execute store result score $tmp global run data get storage .:game tmp.weapon.simu_shots
-            #### 負荷検証の4倍化
-                # execute store result score $tmp global run data get storage .:game tmp.weapon.simu_shots 4.0
-
             execute unless score @s gun_ct matches 1.. if data storage .:game Item.components."minecraft:custom_data".weapon{type:"gun"} run \
-                function system:player/attack/gun/summon_bullet with storage .:game tmp.weapon
+                function system:player/attack/gun/root with storage .:game tmp.weapon
 
     ## tidying
         tag @s remove attack_tmp

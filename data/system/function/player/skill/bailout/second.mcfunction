@@ -1,5 +1,3 @@
-say second
-
 tag @s remove used_bailout
 
 tp 0.0 0.0 0.0
@@ -32,3 +30,6 @@ execute \
 execute at @n[tag=skill_tmp] rotated ~ 0 run function system:function/angle_to_vec3/input {scale:3.0}
 kill @e[tag=skill_tmp]
 function #p_motion:xyz
+
+    ## 音
+        playsound minecraft:entity.breeze.hurt player @a ~ ~ ~ 1.0 1 0.0
