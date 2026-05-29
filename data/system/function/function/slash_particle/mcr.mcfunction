@@ -1,0 +1,1 @@
+$execute anchored eyes positioned ^ ^ ^ rotated ~$(yaw) ~$(pitch) run function system:function/slash_particle/loop with storage .:function slash_particle

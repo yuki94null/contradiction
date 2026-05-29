@@ -1,0 +1,1 @@
+$execute store result storage .:function slash_particle.pitch int $(sign).0 run data get storage .:function slash_particle.pitch 1.0

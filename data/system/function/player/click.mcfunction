@@ -3,6 +3,8 @@
         advancement revoke @s only system:left_click
         advancement revoke @s only system:right_click
 
+        swing @s mainhand
+
     ## join suru?
         execute positioned 12.5 2.0 12.5 if entity @s[distance=..2.0] run return run function system:player/join
     ## 強制スタート？

@@ -8,7 +8,10 @@
         execute store result score $tmp global run data get storage .:system tmp.skill.max_charge
 
     ## スコア
-        execute unless score @s skill_charge >= $tmp global run scoreboard players remove @s[scores={skill_ct=1..}] skill_ct 10
+        $execute \
+            unless score @s skill_charge >= $tmp global \
+            if score @s skill_ct matches 1.. \
+            as @e[tag=bounding_cuboid] run scoreboard players remove @n[tag=attack_tmp] skill_ct $(ct_boost)
 
         $execute as @e[tag=bounding_cuboid] run scoreboard players add @n[tag=attack_tmp] total_bullet_count $(add_bullet)
             function system:player/gun/clump
