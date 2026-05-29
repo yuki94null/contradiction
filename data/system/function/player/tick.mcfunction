@@ -31,6 +31,9 @@
     ## reload
         execute if items entity @s weapon.mainhand *[custom_data~{weapon:{type:"melee"}}] run function system:player/gun/reload/root
 
+    ## ui
+        function system:player/ui/root
+
     ## score
         execute if score @s melee_ct matches 1 run playsound entity.experience_orb.pickup player @s ~ ~ ~ 1.0 2.0 0.0
         scoreboard players remove @s[scores={melee_ct=1..}] melee_ct 1

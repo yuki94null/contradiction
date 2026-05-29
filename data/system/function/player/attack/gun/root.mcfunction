@@ -16,7 +16,6 @@
         execute if predicate {condition:"entity_properties","entity":"this",predicate:{flags:{is_on_ground:true,is_sneaking:true}}} store result storage .:game tmp.weapon.diffusion_angle double 1.0 run data get storage .:game tmp.weapon.diffusion_angle 0.75
             
     #### 弾を出す
-        $say $(kinds)
         $function system:player/attack/gun/$(kinds)/root
         function system:player/attack/gun/summon_bullet with storage .:game tmp.weapon
 

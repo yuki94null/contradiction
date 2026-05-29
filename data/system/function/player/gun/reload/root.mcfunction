@@ -1,6 +1,4 @@
 # player/reload/root
-    tellraw @s [{text:"bullet_count: "},{score:{name:"@s",objective:"bullet_count"}}]
-    tellraw @s [{text:"total_bullet_count: "},{score:{name:"@s",objective:"total_bullet_count"}}]
     ## 弾なかったらタイマー進めない
         execute unless score @s total_bullet_count matches 1.. run return fail
 

@@ -9,10 +9,9 @@
             tag @e[tag=bounding_cuboid,team=melee] remove bounding_cuboid
         
         ## ヒット時の処理
-            execute if entity @e[tag=bounding_cuboid] run function system:player/attack/melee/hit
+            execute if entity @e[tag=bounding_cuboid] run function system:player/attack/melee/hit with storage .:game tmp.weapon
         ### 弾
-            $execute as @e[tag=bounding_cuboid] run scoreboard players add @n[tag=attack_tmp] total_bullet_count $(add_bullet)
-            function system:player/gun/clump
+            
 
         ### ダメージ
             $execute as @e[tag=bounding_cuboid] run damage @s $(melee_damage) player_attack by @n[tag=attack_tmp]
