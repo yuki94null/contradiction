@@ -23,10 +23,18 @@
     #declare tag bounding_cylinder
 
 # 引数チェック
-    execute unless data storage km_bounding: arguments.cylinder.selector run return run tellraw @a [{"text":"ERROR >> ","color":"red"},{"text":"km_bounding:bounding_cylinder/","color":"gold"},{"text":"のselector引数が不足しています。","color":"white"}]
-    execute unless data storage km_bounding: arguments.cylinder.radius run return run tellraw @a [{"text":"ERROR >> ","color":"red"},{"text":"km_bounding:bounding_cylinder/","color":"gold"},{"text":"のradius引数が不足しています。","color":"white"}]
-    execute unless data storage km_bounding: arguments.cylinder.y_plus run return run tellraw @a [{"text":"ERROR >> ","color":"red"},{"text":"km_bounding:bounding_cylinder/","color":"gold"},{"text":"のy_plus引数が不足しています。","color":"white"}]
-    execute unless data storage km_bounding: arguments.cylinder.y_minus run return run tellraw @a [{"text":"ERROR >> ","color":"red"},{"text":"km_bounding:bounding_cylinder/","color":"gold"},{"text":"のy_minus引数が不足しています。","color":"white"}]
+    execute unless data storage km_bounding: arguments.cylinder.selector run \
+        return run \
+            tellraw @a [{"text":"ERROR >> ","color":"red"},{"text":"km_bounding:bounding_cylinder/","color":"gold"},{"text":"のselector引数が不足しています。","color":"white"}]
+    execute unless data storage km_bounding: arguments.cylinder.radius run \
+        return run \
+            tellraw @a [{"text":"ERROR >> ","color":"red"},{"text":"km_bounding:bounding_cylinder/","color":"gold"},{"text":"のradius引数が不足しています。","color":"white"}]
+    execute unless data storage km_bounding: arguments.cylinder.y_plus run \
+        return run \
+            tellraw @a [{"text":"ERROR >> ","color":"red"},{"text":"km_bounding:bounding_cylinder/","color":"gold"},{"text":"のy_plus引数が不足しています。","color":"white"}]
+    execute unless data storage km_bounding: arguments.cylinder.y_minus run \
+        return run \
+            tellraw @a [{"text":"ERROR >> ","color":"red"},{"text":"km_bounding:bounding_cylinder/","color":"gold"},{"text":"のy_minus引数が不足しています。","color":"white"}]
 
 # パラメータをコピー
     data modify storage km_bounding: cylinder.macro set from storage km_bounding: arguments.cylinder

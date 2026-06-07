@@ -18,3 +18,9 @@
         function #p_motion:xyz
     ## 音
         playsound minecraft:entity.breeze.wind_burst player @a ~ ~ ~ 1.0 1.0 0.0
+
+    ## particle
+        particle campfire_cosy_smoke ~2.0 ~1.5 ~2.0 2.0 1.5 2.0 0.0 500 force @a
+        particle campfire_cosy_smoke ~-2.0 ~1.5 ~2.0 2.0 1.5 2.0 0.0 500 force @a
+        particle campfire_cosy_smoke ~2.0 ~1.5 ~-2.0 2.0 1.5 2.0 0.0 500 force @a
+        particle campfire_cosy_smoke ~-2.0 ~1.5 ~-2.0 2.0 1.5 2.0 0.0 500 force @a

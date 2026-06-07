@@ -14,8 +14,10 @@
         execute anchored eyes positioned ^ ^ ^ run function system:player/skill/fade_assult/loop
 
     ## ヒットしたやつの位置に
-        execute anchored eyes at @n[tag=fade_assult] positioned ^ ^ ^-2.5 facing entity @n[tag=fade_assult] feet run tp @s ~ ~ ~ ~ ~
+        execute anchored eyes at @n[tag=fade_assult] positioned ^ ^ ^-1.0 unless block ~ ~ ~ #air positioned ^ ^ ^0.9999999999 facing entity @n[tag=fade_assult] feet run return run function system:player/skill/fade_assult/tp
+        execute anchored eyes at @n[tag=fade_assult] positioned ^ ^ ^-2.0 unless block ~ ~ ~ #air positioned ^ ^ ^1.0 facing entity @n[tag=fade_assult] feet run return run function system:player/skill/fade_assult/tp
+        execute anchored eyes at @n[tag=fade_assult] positioned ^ ^ ^-2.5 unless block ~ ~ ~ #air positioned ^ ^ ^0.5 facing entity @n[tag=fade_assult] feet run return run function system:player/skill/fade_assult/tp
+        execute anchored eyes at @n[tag=fade_assult] positioned ^ ^ ^-2.5 facing entity @n[tag=fade_assult] feet run function system:player/skill/fade_assult/tp
 
-    ## タグ外し
-        tag @e remove fade_assult
+    ## タグを外す
         tag @s remove skill_tmp

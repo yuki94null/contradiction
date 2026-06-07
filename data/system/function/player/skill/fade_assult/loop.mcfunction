@@ -1,9 +1,10 @@
 # player/skill/fade_assult/loop
     ## 該当エンティティにタグ付け
-        execute as @e[nbt={Brain:{}}] if entity @s[dx=0,dy=1,dz=0] positioned ~-0.5 ~-0.5 ~-0.5 if entity @s[dx=0,dy=1,dz=0] run tag @s[tag=!skill_tmp] add fade_assult
+        execute as @e[nbt={Brain:{}}] positioned ~-0.25 ~-0.25 ~-0.25 if entity @s[dx=0,dy=1,dz=0] positioned ~-0.5 ~-0.5 ~-0.5 if entity @s[dx=0,dy=1,dz=0] run tag @s[tag=!skill_tmp] add fade_assult
 
     ## 自分用に軌跡
-        particle end_rod ~ ~ ~ 0.0 0.0 0.0 0.0 1 force @s
+        particle reverse_portal ~ ~ ~ 0.0 0.0 0.0 0.0 1 force @s
+        particle portal ~ ~ ~ 0.0 0.0 0.0 0.0 1 force @s
 
     ## 進める
         scoreboard players remove $tmp global 1

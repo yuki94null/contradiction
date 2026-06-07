@@ -23,5 +23,6 @@
         ###
             tag @e remove already_attack_n_move
 
+        kill @e[tag=sort]
     ## 簡易サウンド すぐ消す
         function system:sound/tick

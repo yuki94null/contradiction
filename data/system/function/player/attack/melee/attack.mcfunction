@@ -6,7 +6,7 @@
         ### 自分を外す
             tag @s remove bounding_cuboid
         ### 近接のやつ外す
-            tag @e[tag=bounding_cuboid,team=melee] remove bounding_cuboid
+            tag @e[tag=bounding_cuboid,tag=melee] remove bounding_cuboid
         
         ## ヒット時の処理
             execute if entity @e[tag=bounding_cuboid] run function system:player/attack/melee/hit with storage .:game tmp.weapon

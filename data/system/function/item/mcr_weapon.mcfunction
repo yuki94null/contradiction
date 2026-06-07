@@ -80,7 +80,11 @@ $loot $(pass) loot {\
                                         },\
                                         "slot": "hand"\
                                     }\
-                                ]\
+                                ],\
+                                "swing_animation": {\
+                                    "duration": $(ct),\
+                                    "type": "$(swing_type)"\
+                                }\
                             }\
                         }\
                     ]\

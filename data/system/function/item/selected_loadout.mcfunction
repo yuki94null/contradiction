@@ -7,6 +7,9 @@
             function system:item/text_melee with storage .:system tmp.melee
             function system:item/text_gun with storage .:system tmp.gun
 
+            data modify storage .:system tmp.melee.ct set from storage .:system tmp.melee.melee_ct
+            data modify storage .:system tmp.gun.ct set from storage .:system tmp.gun.gun_ct
+
         ### 定型文
             #### セット位置
                 data modify storage .:system tmp.melee.pass set value "replace entity @s hotbar.0"

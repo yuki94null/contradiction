@@ -1,6 +1,5 @@
 # game/join
     ## 返すやつら
-
         ### 既ジョイン
             execute if entity @s[tag=queue] run return run function system:player/leave
 

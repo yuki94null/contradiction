@@ -11,7 +11,7 @@
         $execute \
             unless score @s skill_charge >= $tmp global \
             if score @s skill_ct matches 1.. \
-            as @e[tag=bounding_cuboid] run scoreboard players remove @n[tag=attack_tmp] skill_ct $(ct_boost)
+            as @e[tag=bounding_cuboid] run scoreboard players add @n[tag=attack_tmp] skill_ct $(ct_boost)
 
         $execute as @e[tag=bounding_cuboid] run scoreboard players add @n[tag=attack_tmp] total_bullet_count $(add_bullet)
             function system:player/gun/clump

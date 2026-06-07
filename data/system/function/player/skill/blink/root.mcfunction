@@ -36,11 +36,19 @@
             #### 
                 execute if predicate {condition:"entity_properties",entity:"this",predicate:{flags:{is_on_ground:true}}} if predicate {condition:"entity_properties",entity:"this",predicate:{type_specific:{type:"player",input:{sneak:false}}}} at @n[tag=skill_tmp] rotated ~ -15 run function system:function/angle_to_vec3/input {scale:2.5}
                 execute if predicate {condition:"entity_properties",entity:"this",predicate:{flags:{is_on_ground:true}}} if predicate {condition:"entity_properties",entity:"this",predicate:{type_specific:{type:"player",input:{sneak:true}}}} at @n[tag=skill_tmp] rotated ~ -60 run function system:function/angle_to_vec3/input {scale:1.25}
-        #### 用済みなので殺す
-            kill @e[tag=skill_tmp]
+        
 
     ## モーション与える
         function #p_motion:xyz
 
     ## 音
         playsound entity.breeze.jump player @a ~ ~ ~ 1.0 1.0 0.0
+
+    ## particle
+        particle small_gust ~ ~ ~ 0.0 0.0 0.0 0.0 1 force @a
+        particle gust ~ ~ ~ 0.0 0.0 0.0 0.0 1 force @a
+
+        execute rotated as @n[tag=skill_tmp] run function system:player/skill/blink/particle
+
+    #### 用済みなので殺す
+        kill @e[tag=skill_tmp]

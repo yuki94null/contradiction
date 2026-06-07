@@ -15,9 +15,9 @@
         execute if items entity @s player.cursor barrier run function system:player/retire
 
     ## skill
-        ## passive
+        ### passive
             function system:player/skill/root
-        ## use
+        ### use
             execute if items entity @s[tag=user] weapon.offhand * run function system:player/skill/use
         
     ## inventory

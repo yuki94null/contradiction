@@ -20,11 +20,12 @@
             function system:function/ratio_ui_generator/input
             data modify storage .:system tmp.ui.reload set from storage .:function ratio_ui_generator.result
 
-        ### 弾数
-            execute store result score $tmp global store result storage .:function ratio_ui_generator.input_0 int 1.0 run data get storage .:system tmp.skill.skill_ct 1.0
-            execute store result storage .:function ratio_ui_generator.input_1 int 1.0 run scoreboard players operation $tmp global -= @s skill_ct
+        ### スキルチャージ
+            execute store result storage .:function ratio_ui_generator.input_0 int 1.0 run data get storage .:system tmp.skill.skill_ct 1.0
+            execute store result storage .:function ratio_ui_generator.input_1 int 1.0 run scoreboard players get @s skill_ct
             function system:function/ratio_ui_generator/input
             data modify storage .:system tmp.ui.skill_ct set from storage .:function ratio_ui_generator.result
+
 
 title @s actionbar \
 [                                               \
